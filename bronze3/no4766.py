@@ -1,5 +1,4 @@
 temp_list = []
-tot_list = []
 while True:
     a = float(input())
     if a == 999:
