@@ -1,6 +1,6 @@
 N = int(input())
 customer = list(map(int, input().split()))
-cus_list = [0] + [0 for j in range(1, 101)]
+cus_list = [0 for j in range(101)]
 cnt = 0
 for i in customer:
     if cus_list[i] == 0:
