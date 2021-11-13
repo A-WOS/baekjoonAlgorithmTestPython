@@ -12,4 +12,4 @@ for i in range(T):
     x %= n
     p_c = x // p
     x %= p
-    print(int(q_c), int(d_c), int(n_c), int(p_c), x)
+    print(int(q_c), int(d_c), int(n_c), int(p_c))
