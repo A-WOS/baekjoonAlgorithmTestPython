@@ -11,9 +11,4 @@ tot = 0
 for i in s:
     tot += dct.get(i)
 print(tot)
-# print(keys)
-# values = [val for val in range(1, 27)]
-# dct = dict.fromkeys(keys, values)
-# print(dct)
-# dict.fromkeys()
-# dict.from
+
