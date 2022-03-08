@@ -8,6 +8,7 @@ x, y = divmod(t, b)
 # if i > 0: sosu.append(a)
 print(x, y)
 
+
 # print(a/b)
 # sosu = list()
 # for _ in range(n):
