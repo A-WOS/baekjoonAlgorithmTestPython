@@ -1,12 +1,12 @@
 import sys
 
 teams = int(input())
-students = sorted(map(int, sys.stdin.readline().split()))
+ability = sorted(map(int, sys.stdin.readline().split()))
 left, right = 0, teams*2 - 1
 rs = 199999
 while left < right:
-    if students[left] + students[right] < rs:
-        rs = students[left] + students[right]
+    if ability[left] + ability[right] < rs:
+        rs = ability[left] + ability[right]
     left += 1
     right -= 1
 print(rs)
