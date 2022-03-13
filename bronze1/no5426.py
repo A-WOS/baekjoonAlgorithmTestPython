@@ -13,3 +13,5 @@ for _ in range(int(input())):
             rs += secrets_l[j][i]
 
     print(rs)
+
+# zip()
