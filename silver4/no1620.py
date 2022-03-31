@@ -12,5 +12,5 @@ for _ in range(rp):
     try:
         if int(rs):
             print(pocket_mons[int(rs)])
-    except:
+    except ValueError:
         print(switch_pocket_mons[rs])
