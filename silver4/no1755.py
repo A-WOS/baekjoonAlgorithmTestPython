@@ -1,20 +1,22 @@
 import collections
 
-numbers = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three',
+org_numbers = {'0': 'zero', '1': 'one', '2': 'two', '3': 'three',
            '4': 'four', '5': 'five', '6': 'six', '7': 'seven',
            '8': 'eight', '9': 'nine'}
 
+new_numbers = collections.defaultdict(str)
+zip_numbers = collections.defaultdict(str)
 M, N = map(int, input().split())
-print(sorted(numbers.values()))
-rs_numbers = []
-for i in range(M, N + 1):
+for number in range(M, N+1):
     rs = ''
-    # rs.append(numbers[val] for val in list(str(i))))
-    for val in list(str(i)):
-        rs += f'{numbers[val]} '
-    rs_numbers.append(rs.rstrip())
-print(rs_numbers)
-    # print(next(numbers[val] for val in list(str(i))))
-    # print(numbers['0'])
-    # for val in list(str(i)):
-    #     ''.join(numbers)
+    for val in str(number):
+        rs += f'{org_numbers[val]} '
+    new_numbers[str(number)] = rs.strip()
+
+zip_numbers = dict(zip(new_numbers.values(), new_numbers.keys()))
+count = 0
+for val in sorted(new_numbers.values()):
+    count += 1
+    print(zip_numbers[val], end=' ')
+    if count % 10 == 0:
+        print()
