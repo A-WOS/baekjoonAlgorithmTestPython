@@ -1,0 +1,5 @@
+n = int(input())
+s = input()
+a = s.count('A')
+b = s.count('B')
+print('A') if a > b else print('B') if a < b else print('Tie')
